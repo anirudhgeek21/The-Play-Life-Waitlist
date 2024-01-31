@@ -7,7 +7,7 @@ const pool = require("./db");
 app.use(cors());
 app.use(express.json());
 
-//create user registration
+
 app.post("/regs" , async(req,res) => {
     try {
         const { name, age, email, refferal } = req.body;
